@@ -99,3 +99,5 @@ Now in Our local Project  go to environment.ts file and replace cloudFunctions o
 ng serve
 ```
 And you are ready to go to the most visited url ever localhost:4200 ;)
+
+Feel Free to Raise any Issues if encountered, Also I am available on Google Hangouts(abdulrauf76143@gmail.com) 7 days a week to answer all your queries, Happy Coding :)
