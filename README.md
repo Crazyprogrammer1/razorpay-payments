@@ -98,7 +98,9 @@ Now in Our local Project  go to environment.ts file and replace cloudFunctions o
     capturePayment: 'YOUR_FUNCTION_URL_HERE'
   }
 ```
-# And Last but not the least Run
+### The final stuff :) 
+
+Run
 
 ```
 ng serve
