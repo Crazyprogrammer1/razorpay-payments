@@ -29,7 +29,7 @@ I have used angular as the front end and Firebase Cloud function as the backend 
       6) E-commerce Plugins
       7) Language-wise SDK Integration
       
- I have used Web Integration for this project, You can use an of the integration as per your need, To follow along with the full documentation visit https://razorpay.com/docs/. 
+ I have used Web Integration for this project, You can use any of these integration as per your need, To follow along with the full documentation visit https://razorpay.com/docs/. 
  
  
 
