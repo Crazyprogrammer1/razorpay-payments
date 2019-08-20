@@ -8,7 +8,11 @@ A complete solution for all your Payment needs, made with :heart:  by [Crazy Pro
 
 ### Demo
 
-<a target="_blank" href="https://akveo.github.io/ng2-smart-table/">Live Demo</a>
+<a target="_blank" href="https://razorpay-payments-5acbf.firebaseapp.com">Live Demo</a>
+
+  #### Note that I have used test mode for this Live Demo, To accept real payments you can enable live mode in your razorpay dashboard, And change your test Key_Id and Key_Secret with live Key_Id and Key_Secret to start accepting real payments.
+  
+
 
 # Guide to the example
 
@@ -36,6 +40,9 @@ Steps required for getting started with web Integration:-
 3) Implement Order API in the backend.
 4) Capture Athorized payments.
   
+
+  For a high level understanding of the payment flow, Refer <a target="_blank" href="https://firebasestorage.googleapis.com/v0/b/razorpay-payments-5acbf.appspot.com/o/tech_flow_2.png?alt=media&token=6f52cbb2-4150-46d5-859f-ea4807d583e4">This</a>
+  
     Thats it :) you have integrated an e2e payment solution in your application.
    
    
@@ -45,15 +52,13 @@ Steps required for getting started with web Integration:-
 
 1) We Need a firebase project for running our cloud functions which will be a backend for our project.You can signup for firebase and create your project here https://console.firebase.google.com.
 
-2) Once you have created your project, Under project settings you will find your firebase config object, Replace the config object from environment.ts file with the your config object.
-
-3) In the project and in the functions directory, Run 
+2) In the project and in the functions directory, Run 
 
 ```
 npm install 
 ```
 
-4) One last thing is to replace the key_id and key_secret of razorpay in the cloud functions. Grab your key_id and key_secret from https://razorpay.com [Signup for razorpay is required], Go to index.js file in the functions directory and replace the dummy details with actual key_id and key_secret.
+3) One last thing is to replace the key_id and key_secret of razorpay in the cloud functions. Grab your key_id and key_secret from https://razorpay.com [Signup for razorpay is required], Go to index.js file in the functions directory and replace the dummy details with actual key_id and key_secret.
 
  # Deploy your cloud functions to firebase
  
@@ -73,7 +78,7 @@ firebase login
 ```
 firebase deploy --only functions
 ```
-
+  while deploying select the project which you have created in firebase.
 
 # And the last thing
 
@@ -93,7 +98,9 @@ Now in Our local Project  go to environment.ts file and replace cloudFunctions o
     capturePayment: 'YOUR_FUNCTION_URL_HERE'
   }
 ```
-# And Last but not the least Run
+### The final stuff :) 
+
+Run
 
 ```
 ng serve
