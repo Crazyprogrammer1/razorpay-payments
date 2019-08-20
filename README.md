@@ -19,15 +19,15 @@ A complete solution for all your Payment needs, made with :heart:  by [Crazy Pro
 Accept payments with more than 10 payment methods including credit-card, debit-card, net-banking, UPI, wallets etc with less than 10 steps.
 
 I have used angular as the front end and Firebase Cloud function as the backend for this project. Feel free to change them with your favourite language.
-  
-   There are alot of ways in which we can integrate razorpay in our app such as :-
-      1) Web Integration
-      2) Android Integration
-      3) iOS Integration
-      4) React Native Integration
-      5) Flutter Integration
-      6) E-commerce Plugins
-      7) Language-wise SDK Integration
+ 
+There are alot of ways in which we can integrate razorpay in our app such as :-
+1) Web Integration
+2) Android Integration
+3) iOS Integration
+4) React Native Integration
+5) Flutter Integration
+6) E-commerce Plugins
+7) Language-wise SDK Integration
       
  I have used Web Integration for this project, You can use any of these integration as per your need, To follow along with the full documentation visit https://razorpay.com/docs/. 
  
