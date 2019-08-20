@@ -36,6 +36,8 @@ Steps required for getting started with web Integration:-
 3) Implement Order API in the backend.
 4) Capture Athorized payments.
   
+  For a high level understanding of the payment flow, Refer <a target="_blank" href="https://akveo.github.io/ng2-smart-table/">This</a>
+  
     Thats it :) you have integrated an e2e payment solution in your application.
    
    
