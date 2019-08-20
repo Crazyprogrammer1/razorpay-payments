@@ -10,6 +10,10 @@ A complete solution for all your Payment needs, made with :heart:  by [Crazy Pro
 
 <a target="_blank" href="https://razorpay-payments-5acbf.firebaseapp.com">Live Demo</a>
 
+  #### Note that I have used test mode for this Live Demo, To accept real payments you can enable live mode in your razorpay dashboard, And change your test Key_Id and Key_Secret with live Key_Id and Key_Secret to start accepting real payments.
+  
+
+
 # Guide to the example
 
 Accept payments with more than 10 payment methods including credit-card, debit-card, net-banking, UPI, wallets etc with less than 10 steps.
@@ -36,8 +40,7 @@ Steps required for getting started with web Integration:-
 3) Implement Order API in the backend.
 4) Capture Athorized payments.
   
-  #### Note that we will be using test mode for this project, If you want to accept real payments you can enable live mode in your razorpay dashboard, And change your test Key_Id and Key_Secret with live Key_Id and Key_Secret to start accepting real payments.
-  
+
   For a high level understanding of the payment flow, Refer <a target="_blank" href="https://firebasestorage.googleapis.com/v0/b/razorpay-payments-5acbf.appspot.com/o/tech_flow_2.png?alt=media&token=6f52cbb2-4150-46d5-859f-ea4807d583e4">This</a>
   
     Thats it :) you have integrated an e2e payment solution in your application.
