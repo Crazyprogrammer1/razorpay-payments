@@ -52,6 +52,8 @@ Steps required for getting started with web Integration:-
 
 1) We Need a firebase project for running our cloud functions which will be a backend for our project.You can signup for firebase and create your project here https://console.firebase.google.com.
 
+    ##### Once done creating with project, Open .firebaserc file in the project and change project name to your firebase project name.
+
 2) In the project and in the functions directory, Run 
 
 ```
