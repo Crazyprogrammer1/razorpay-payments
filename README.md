@@ -8,7 +8,7 @@ A complete solution for all your Payment needs, made with :heart:  by [Crazy Pro
 
 ### Demo
 
-<a target="_blank" href="https://akveo.github.io/ng2-smart-table/">Live Demo</a>
+<a target="_blank" href="https://razorpay-payments-5acbf.firebaseapp.com">Live Demo</a>
 
 # Guide to the example
 
