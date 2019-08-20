@@ -1,0 +1,179 @@
+<div class="shopping-wrapper">
+  <div class="container">
+    <div class="shoping-heading">
+      <h3>Your Shoping Basket ({{ quantity }} item)</h3>
+    </div>
+
+    <div class="my-cart-sec">
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="cart-left-sec">
+            <div class="cart-top">
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="top-head">
+                    <h5>My Cart ({{ quantity }})</h5>
+                  </div>
+                </div>
+                <div class="col-sm-8">
+                  <div class="top-head-right">
+                    <div class="cart-del-icon">
+                      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48ZWxsaXBzZSBjeD0iOSIgY3k9IjE0LjQ3OCIgZmlsbD0iI0ZGRTExQiIgcng9IjkiIHJ5PSIzLjUyMiIvPjxwYXRoIGZpbGw9IiMyODc0RjAiIGQ9Ik04LjYwOSA3LjAxYy0xLjA4IDAtMS45NTctLjgyNi0xLjk1Ny0xLjg0NSAwLS40ODkuMjA2LS45NTguNTczLTEuMzA0YTIuMDIgMi4wMiAwIDAgMSAxLjM4NC0uNTRjMS4wOCAwIDEuOTU2LjgyNSAxLjk1NiAxLjg0NCAwIC40OS0uMjA2Ljk1OS0uNTczIDEuMzA1cy0uODY0LjU0LTEuMzgzLjU0ek0zLjEzIDUuMTY1YzAgMy44NzQgNS40NzkgOC45MjIgNS40NzkgOC45MjJzNS40NzgtNS4wNDggNS40NzgtOC45MjJDMTQuMDg3IDIuMzEzIDExLjYzNCAwIDguNjA5IDAgNS41ODMgMCAzLjEzIDIuMzEzIDMuMTMgNS4xNjV6Ii8+PC9nPjwvc3ZnPg==" alt="" />
+                      <span> Deliver to : </span>
+                    </div>
+                    &nbsp;
+                    <div class="cart-location">
+                      <span> Hyderabad </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <ng-container *ngFor="let product of products">
+              <div class="cart-mid-sec">
+                
+                <div class="cart-mid-top">
+                  <a class="cart-img">
+                    <img
+                      [src]="product.images.bannerImage"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </a>
+
+                  <div class="cart-dis">
+                    <div class="cart-dis-heading">
+                      <a>
+                        {{ product.name }}
+                      </a>
+                    </div>
+
+
+                    <div class="cart-price">
+                      <div class="p-offer pMSy0p">₹{{ product.price }}</div>
+                      &nbsp;
+                      <div class="p-main pMSy0p LYRnr_ ">
+                        ₹{{ product.price - 10 }}
+                      </div>
+                      &nbsp;
+                      <span class="p-off">
+                        60% Off
+                      </span>
+                    </div>
+                    <div class="p-size">Size: {{ product.size }}</div>
+                    &nbsp;
+                  </div>
+                </div>
+
+                <div class="cart-des-bot">
+                  <div class="item-sec">
+                    <button
+                      class="decrease"
+                      (click)="decreaseProductQuantity(product)"
+                      [disabled]="product.quantity == 1"
+                    >
+                      -
+                    </button>
+                    <div class="item-number">{{ product.quantity }}</div>
+                    <button
+                      class="increase"
+                      (click)="increaseProductQuantity(product)"
+                    >
+                      +
+                    </button>
+                  </div>
+                  <div class="item-remove">
+                    <a class="btn btn-remove"> Move to WishList</a>
+                  </div>
+                  <div class="item-remove">
+                    <a class="btn btn-remove">
+                      Remove</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+
+         
+          </div>
+          <ng-container *ngIf="products.length == 0">
+            <div  class="empty-cart">
+                <div>
+                    <h1>
+                            Your Shopping Cart is empty.
+                     </h1>
+                </div>
+            
+                <div>
+                    <p>
+                        Your Shopping Cart lives to serve. Give it purpose--fill it with Shirts, Jeans, T-Shirts, Watches, and more.
+            
+                        <br /> Continue shopping on the
+                        <a  routerLink="/">stylemirror.in homepage</a>,
+                         learn about
+                              <a  href="/gp/goldbox/ref=ord_cart_empty" >today's deals</a  >,
+                                 or visit your
+                              <a href="/gp/registry/wishlist/ref=ord_cart_empty" >Wish List</a >.
+                            </p>
+                          </div>
+                      </div>
+        </ng-container>
+        </div>
+   
+        <div class="col-sm-4">
+          <div class="item-price-details">
+            <div class="price-box">
+              <div class="price-heading heading-border">
+                <h5>PRICE DETAILS</h5>
+              </div>
+              <div class="price-section">
+                <div class="price-item">
+                  Price ({{ quantity }}
+                  {{ quantity > 1 ? "items" : "item" }})<span>
+                    ₹{{ totalPrice }}</span
+                  >
+                </div>
+                <div class="price-item">
+                  Delivery<span>
+                    <span class="free-shiping shiping-charges"> free</span>
+                  </span>
+                </div>
+
+                <div class="price-total">
+                  <div class="price-item">
+                    Total Payable<span> ₹{{ totalPrice }}</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-save bottom-border">
+                You will save ₹560 on this order
+              </div>
+
+              <div class="order-place">
+                <a (click)="proceedToPay($event)" class="btn btn-order">
+                    <ng-container *ngIf="processingPayment">
+                        <i class="fa fa-circle-o-notch fa-spin"></i> Processing
+                    </ng-container>
+                    <ng-container *ngIf="!processingPayment"> 
+                      Proceed to Pay
+                    </ng-container>
+                 </a>
+              </div>
+            </div>
+          </div>
+        </div>
+     
+      </div>
+
+      <div class="row payment-response" *ngIf="paymentResponse.body">
+        <div class="col-sm-12">
+             <div class="alert alert-success" role="alert">
+                Payment successfull, With payment id {{paymentResponse.req.payment_id}} Below are the deatails
+              </div>
+            <prettyjson [obj]="paymentResponse.body"></prettyjson>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

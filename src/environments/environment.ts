@@ -3,8 +3,14 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  cloudFunctions : {
+    createOrder: 'YOUR_CREATE_ORDER_CLOUD_FUNCTION_URL',
+    capturePayment: 'YOUR_CAPTURE_PAYMENT_CLOUD_FUNCTION_URL'
+  },
+  RAZORPAY_KEY_ID: 'YOUR_RAZORPAY_KEY_ID'
 };
+
 
 /*
  * For easier debugging in development mode, you can import the following file
