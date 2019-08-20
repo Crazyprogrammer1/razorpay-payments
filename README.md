@@ -36,7 +36,7 @@ Steps required for getting started with web Integration:-
 3) Implement Order API in the backend.
 4) Capture Athorized payments.
   
-  For a high level understanding of the payment flow, Refer <a target="_blank" href="https://akveo.github.io/ng2-smart-table/">This</a>
+  For a high level understanding of the payment flow, Refer <a target="_blank" href="https://firebasestorage.googleapis.com/v0/b/razorpay-payments-5acbf.appspot.com/o/tech_flow_2.png?alt=media&token=6f52cbb2-4150-46d5-859f-ea4807d583e4">This</a>
   
     Thats it :) you have integrated an e2e payment solution in your application.
    
