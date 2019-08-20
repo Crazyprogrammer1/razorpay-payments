@@ -45,15 +45,13 @@ Steps required for getting started with web Integration:-
 
 1) We Need a firebase project for running our cloud functions which will be a backend for our project.You can signup for firebase and create your project here https://console.firebase.google.com.
 
-2) Once you have created your project, Under project settings you will find your firebase config object, Replace the config object from environment.ts file with the your config object.
-
-3) In the project and in the functions directory, Run 
+2) In the project and in the functions directory, Run 
 
 ```
 npm install 
 ```
 
-4) One last thing is to replace the key_id and key_secret of razorpay in the cloud functions. Grab your key_id and key_secret from https://razorpay.com [Signup for razorpay is required], Go to index.js file in the functions directory and replace the dummy details with actual key_id and key_secret.
+3) One last thing is to replace the key_id and key_secret of razorpay in the cloud functions. Grab your key_id and key_secret from https://razorpay.com [Signup for razorpay is required], Go to index.js file in the functions directory and replace the dummy details with actual key_id and key_secret.
 
  # Deploy your cloud functions to firebase
  
@@ -73,7 +71,7 @@ firebase login
 ```
 firebase deploy --only functions
 ```
-
+  while deploying select the project which you have created in firebase.
 
 # And the last thing
 
