@@ -82,8 +82,8 @@ Once deployment is done, Go to functions in your firebase console. You Should se
 2) createOrder
 
 Copy the url of these functions, which may look simimlar to 
-https://us-central1-${YOUR_PROJECT_NAME}.cloudfunctions.net/createOrder
-https://us-central1-${YOUR_PROJECT_NAME}.cloudfunctions.net/capturePayments
+1) https://us-central1-${YOUR_PROJECT_NAME}.cloudfunctions.net/createOrder
+2) https://us-central1-${YOUR_PROJECT_NAME}.cloudfunctions.net/capturePayments
 
 Now in Our local Project  go to environment.ts file and replace cloudFunctions object's createOrder and capturePayment Url with your functions url i.e. 
 
@@ -98,4 +98,4 @@ Now in Our local Project  go to environment.ts file and replace cloudFunctions o
 ```
 ng serve
 ```
-And you are ready to go the most visited url ever localhost:4200 ;)
+And you are ready to go to the most visited url ever localhost:4200 ;)
